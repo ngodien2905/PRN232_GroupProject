@@ -1,0 +1,6 @@
+@MathTeachingPlatformAPI_HostAddress = http://localhost:5051
+
+GET {{MathTeachingPlatformAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

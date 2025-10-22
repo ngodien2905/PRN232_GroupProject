@@ -1,0 +1,58 @@
+﻿using System;
+using System.Threading.Tasks;
+using Domain.Entities;
+using Domain.Enum;
+using Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+namespace Infrastructure.Seed
+{
+    public static class DatabaseSeeder
+    {
+        public static async Task SeedAsync(IServiceProvider services, ILogger logger)
+        {
+            await using var scope = services.CreateAsyncScope();
+            var provider = scope.ServiceProvider;
+
+            var authDb = provider.GetRequiredService<AuthDbContext>();
+            var contentDb = provider.GetRequiredService<ContentDbContext>();
+            var examDb = provider.GetRequiredService<ExamDbContext>();
+            var aiDb = provider.GetRequiredService<AiDbContext>();
+
+            logger.LogInformation("Applying migrations...");
+
+            // Apply migrations and ensure creation
+            await authDb.Database.MigrateAsync();
+            await contentDb.Database.MigrateAsync();
+            await examDb.Database.MigrateAsync();
+            await aiDb.Database.MigrateAsync();
+
+            logger.LogInformation("Databases migrated successfully.");
+
+            await SeedAdminUserAsync(authDb, logger);
+        }
+
+        private static async Task SeedAdminUserAsync(AuthDbContext db, ILogger logger)
+        {
+            // check if admin exists
+            if (await db.Users.AnyAsync(u => u.Username == "admin")) return;
+
+            logger.LogInformation("Seeding default admin user...");
+
+            db.Users.Add(new User
+            {
+                Username = "admin",
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin@123"),
+                Role = UserRole.Admin,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            });
+
+            await db.SaveChangesAsync();
+
+            logger.LogInformation("Admin user seeded (username: admin, password: Admin@123).");
+        }
+    }
+}
