@@ -18,6 +18,15 @@ namespace Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<User>();
+            modelBuilder.Ignore<Teacher>();
+            modelBuilder.Ignore<Student>();
+            modelBuilder.Ignore<Payment>();
+            modelBuilder.Ignore<ExamAttempt>();
+            modelBuilder.Ignore<AIConfig>();
+            modelBuilder.Ignore<AICallLog>();
+            modelBuilder.Ignore<AIHistoryChat>();
+
             modelBuilder.Entity<Subject>(b =>
             {
                 b.ToTable("subjects");
@@ -108,6 +117,7 @@ namespace Infrastructure.Persistence
                 b.HasIndex(x => x.TeacherId);
                 b.HasIndex(x => x.SubjectId);
 
+
                 b.HasMany(x => x.ExamQuestions)
                     .WithOne(eq => eq.Syllabus)
                     .HasForeignKey(eq => eq.SyllabusId)
@@ -173,6 +183,8 @@ namespace Infrastructure.Persistence
                 b.HasIndex(x => x.ExamAttemptId);
                 b.HasIndex(x => x.ActivityType);
                 b.HasIndex(x => x.DueDate);
+
+                // NO NAVIGATION PROPERTY TO EXAMATTEMPT (cross-database)
             });
 
             base.OnModelCreating(modelBuilder);

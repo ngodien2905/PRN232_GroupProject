@@ -40,9 +40,6 @@ namespace Domain.Entities
         [ForeignKey("SubjectId")]
         public virtual Subject Subject { get; set; } = null!;
 
-        [ForeignKey("TeacherId")]
-        public virtual Teacher Teacher { get; set; } = null!;
-
         public virtual ICollection<ClassStudent> ClassStudents { get; set; } = new List<ClassStudent>();
         public virtual ICollection<Activity> Activities { get; set; } = new List<Activity>();
     }

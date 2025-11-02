@@ -24,8 +24,5 @@ namespace Domain.Entities
         [Column("created_at")]
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        // Navigation Properties
-        [ForeignKey("TeacherId")]
-        public virtual Teacher Teacher { get; set; } = null!;
     }
 }

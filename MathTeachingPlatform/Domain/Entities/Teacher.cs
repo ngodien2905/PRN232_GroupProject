@@ -37,11 +37,6 @@ namespace Domain.Entities
         [ForeignKey("UserId")]
         public virtual User User { get; set; } = null!;
 
-        public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
-        public virtual ICollection<Subject> Subjects { get; set; } = new List<Subject>();
-        public virtual ICollection<Syllabus> Syllabi { get; set; } = new List<Syllabus>();
-        public virtual ICollection<AIConfig> AIConfigs { get; set; } = new List<AIConfig>();
-        public virtual ICollection<AIHistoryChat> AIHistoryChats { get; set; } = new List<AIHistoryChat>();
         public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
     }
 }

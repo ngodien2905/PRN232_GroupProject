@@ -23,8 +23,5 @@ namespace Domain.Entities
         // Navigation Properties
         [ForeignKey("ClassId")]
         public virtual Class Class { get; set; } = null!;
-
-        [ForeignKey("StudentId")]
-        public virtual Student Student { get; set; } = null!;
     }
 }

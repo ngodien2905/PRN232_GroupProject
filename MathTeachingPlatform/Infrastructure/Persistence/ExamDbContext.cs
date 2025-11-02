@@ -11,6 +11,21 @@ namespace Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<User>();
+            modelBuilder.Ignore<Teacher>();
+            modelBuilder.Ignore<Student>();
+            modelBuilder.Ignore<Payment>();
+            modelBuilder.Ignore<Class>();
+            modelBuilder.Ignore<ClassStudent>();
+            modelBuilder.Ignore<Subject>();
+            modelBuilder.Ignore<Syllabus>();
+            modelBuilder.Ignore<ExamMatrix>();
+            modelBuilder.Ignore<ExamQuestion>();
+            modelBuilder.Ignore<Activity>();
+            modelBuilder.Ignore<AIConfig>();
+            modelBuilder.Ignore<AICallLog>();
+            modelBuilder.Ignore<AIHistoryChat>();
+
             modelBuilder.Entity<ExamAttempt>(b =>
             {
                 b.ToTable("exam_attempts");
@@ -30,9 +45,6 @@ namespace Infrastructure.Persistence
                 b.HasIndex(x => new { x.StudentId, x.AttemptNumber });
                 b.HasIndex(x => x.StartTime);
             });
-
-            modelBuilder.Entity<ClassStudent>()
-        .HasKey(cs => new { cs.ClassId, cs.StudentId });
 
             base.OnModelCreating(modelBuilder);
         }

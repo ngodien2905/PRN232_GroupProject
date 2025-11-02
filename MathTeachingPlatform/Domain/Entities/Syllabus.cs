@@ -34,8 +34,6 @@ namespace Domain.Entities
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         // Navigation Properties
-        [ForeignKey("TeacherId")]
-        public virtual Teacher Teacher { get; set; } = null!;
 
         [ForeignKey("SubjectId")]
         public virtual Subject Subject { get; set; } = null!;

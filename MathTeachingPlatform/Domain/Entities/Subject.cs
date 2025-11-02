@@ -28,9 +28,6 @@ namespace Domain.Entities
         [Column("updated_at")]
         public DateTime? UpdatedAt { get; set; }
 
-        // Navigation Properties
-        [ForeignKey("TeacherId")]
-        public virtual Teacher Teacher { get; set; } = null!;
 
         public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
         public virtual ICollection<Syllabus> Syllabi { get; set; } = new List<Syllabus>();
