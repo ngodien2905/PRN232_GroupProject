@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FD38971-1EE1-424B-95BB-0922F76C4DE3}|MathTeachingPlatformAPI\\MathTeachingPlatformAPI.csproj|e:\\cn\\cn8\\prn232\\group_project\\prn232_groupproject\\mathteachingplatform\\mathteachingplatformapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7FD38971-1EE1-424B-95BB-0922F76C4DE3}|MathTeachingPlatformAPI\\MathTeachingPlatformAPI.csproj|solutionrelative:mathteachingplatformapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08E14BA9-4E27-4A03-8CD6-BAA87F9EFAA8}|Infrastructure\\Infrastructure.csproj|e:\\cn\\cn8\\prn232\\group_project\\prn232_groupproject\\mathteachingplatform\\infrastructure\\config\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E14BA9-4E27-4A03-8CD6-BAA87F9EFAA8}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\config\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -181,8 +185,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 144,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,31 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthUnitOfWork.cs",
-              "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\AuthUnitOfWork.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AuthUnitOfWork.cs",
-              "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\AuthUnitOfWork.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\AuthUnitOfWork.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T03:17:33.656Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Repository.cs",
-              "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\Repository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T03:17:25.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "IAiUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\Interfaces\\Repositories\\IAiUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IAiUnitOfWork.cs",
@@ -226,20 +206,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Config\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Config\\DependencyInjection.cs",
               "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Config\\DependencyInjection.cs",
               "RelativeToolTip": "Infrastructure\\Config\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T03:21:56.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Repository.cs",
+              "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T03:17:25.485Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AuthUnitOfWork.cs",
+              "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\AuthUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AuthUnitOfWork.cs",
+              "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\AuthUnitOfWork.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\AuthUnitOfWork.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T03:17:33.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ContentUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\ContentUnitOfWork.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ContentUnitOfWork.cs",
@@ -251,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IExamUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\Interfaces\\Repositories\\IExamUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IExamUnitOfWork.cs",
@@ -263,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IUnitOfWork.cs",
@@ -275,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UnitOfWorkBase.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\UnitOfWorkBase.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UnitOfWorkBase.cs",
@@ -287,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ExamUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\ExamUnitOfWork.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ExamUnitOfWork.cs",
@@ -299,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AiUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Repositories\\AiUnitOfWork.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AiUnitOfWork.cs",
@@ -311,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IContentUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\Interfaces\\Repositories\\IContentUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IContentUnitOfWork.cs",
@@ -323,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IAuthUnitOfWork.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\Interfaces\\Repositories\\IAuthUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IAuthUnitOfWork.cs",
@@ -335,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IRepository.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\Interfaces\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\Repositories\\IRepository.cs",
@@ -347,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "ClassInfoDto.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\DTOs\\Student\\ClassInfoDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Student\\ClassInfoDto.cs",
@@ -359,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "StudentDto.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Application\\DTOs\\Student\\StudentDto.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Student\\StudentDto.cs",
@@ -371,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AiDbContext.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Persistence\\AiDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\AiDbContext.cs",
@@ -383,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ContentDbContext.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Persistence\\ContentDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\ContentDbContext.cs",
@@ -395,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ExamDbContext.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Persistence\\ExamDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\ExamDbContext.cs",
@@ -407,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AuthDbContext.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Persistence\\AuthDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Persistence\\AuthDbContext.cs",
@@ -419,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\UserService.cs",
@@ -431,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "PaymentStatus.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\PaymentStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\PaymentStatus.cs",
@@ -443,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\PaymentMethod.cs",
@@ -455,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "QuestionType.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\QuestionType.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\QuestionType.cs",
@@ -467,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "ExamAttemptStatus.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\ExamAttemptStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\ExamAttemptStatus.cs",
@@ -479,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "StudentStatus.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\StudentStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\StudentStatus.cs",
@@ -491,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "TeacherStatus.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\TeacherStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\TeacherStatus.cs",
@@ -503,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "UserRole.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Enum\\UserRole.cs",
               "RelativeDocumentMoniker": "Domain\\Enum\\UserRole.cs",
@@ -515,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Payment.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Payment.cs",
@@ -527,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AIHistoryChat.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\AIHistoryChat.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\AIHistoryChat.cs",
@@ -539,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "AICallLog.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\AICallLog.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\AICallLog.cs",
@@ -551,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "AIConfig.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\AIConfig.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\AIConfig.cs",
@@ -563,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ExamAttempt.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\ExamAttempt.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ExamAttempt.cs",
@@ -575,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ExamQuestion.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\ExamQuestion.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ExamQuestion.cs",
@@ -587,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "ExamMatrix.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\ExamMatrix.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ExamMatrix.cs",
@@ -599,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Activity.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Activity.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Activity.cs",
@@ -611,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ClassStudent.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\ClassStudent.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\ClassStudent.cs",
@@ -623,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Class.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Class.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Class.cs",
@@ -635,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Syllabus.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Syllabus.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Syllabus.cs",
@@ -647,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Subject.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Subject.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Subject.cs",
@@ -659,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Student.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Student.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Student.cs",
@@ -671,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Teacher.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\Teacher.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Teacher.cs",
@@ -683,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
@@ -696,18 +700,31 @@
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedWidth": 256,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\MathTeachingPlatformAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MathTeachingPlatformAPI\\appsettings.json",
+              "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\MathTeachingPlatformAPI\\appsettings.json",
+              "RelativeToolTip": "MathTeachingPlatformAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-07T07:10:33.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StudentService.cs",
               "DocumentMoniker": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Services\\StudentService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\StudentService.cs",
               "ToolTip": "E:\\cn\\cn8\\PRN232\\Group_Project\\PRN232_GroupProject\\MathTeachingPlatform\\Infrastructure\\Services\\StudentService.cs",
               "RelativeToolTip": "Infrastructure\\Services\\StudentService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-25T01:28:24.866Z",
               "EditorCaption": ""

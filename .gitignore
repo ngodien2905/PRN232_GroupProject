@@ -11,7 +11,7 @@ obj/
 /wwwroot/node_modules
 
 # Ignore main appsettings file with local dev settings
-# appsettings.json
+appsettings.json
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
