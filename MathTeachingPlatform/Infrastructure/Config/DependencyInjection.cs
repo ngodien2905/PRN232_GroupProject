@@ -1,5 +1,7 @@
 ﻿using Application.Interfaces;
+using Application.Interfaces.Repositories;
 using Infrastructure.Persistence;
+using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,7 +13,6 @@ namespace Infrastructure.Config
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration cfg)
         {
-            // Ensure you have these connection strings in MathTeachingPlatformAPI/appsettings.json
             var authConn = cfg.GetConnectionString("AuthDatabase") ?? throw new System.Exception("AuthDatabase missing");
             var contentConn = cfg.GetConnectionString("ContentDatabase") ?? throw new System.Exception("ContentDatabase missing");
             var examConn = cfg.GetConnectionString("ExamDatabase") ?? throw new System.Exception("ExamDatabase missing");
@@ -30,6 +31,10 @@ namespace Infrastructure.Config
                 o.UseSqlServer(aiConn, sql => sql.EnableRetryOnFailure())
             );
 
+            services.AddScoped<IAuthUnitOfWork, AuthUnitOfWork>();
+            services.AddScoped<IContentUnitOfWork, ContentUnitOfWork>();
+            services.AddScoped<IExamUnitOfWork, ExamUnitOfWork>();
+            services.AddScoped<IAiUnitOfWork, AiUnitOfWork>();
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IStudentService, StudentService>();
