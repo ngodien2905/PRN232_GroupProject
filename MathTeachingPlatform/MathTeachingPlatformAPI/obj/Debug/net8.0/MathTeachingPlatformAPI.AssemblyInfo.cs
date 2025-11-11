@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MathTeachingPlatformAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9460d925bd0dc3cd7398318178bc2f4a041fb66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22296a2309c65ec8485b950324862487dff55c7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MathTeachingPlatformAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MathTeachingPlatformAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
