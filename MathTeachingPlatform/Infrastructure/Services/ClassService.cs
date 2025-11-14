@@ -32,6 +32,18 @@ namespace Infrastructure.Services
 
         public async Task<ClassDto> CreateClassAsync(CreateClassRequest request)
         {
+            // Business Rule: Validate start date is not in the past
+            if (request.StartDate.HasValue && request.StartDate.Value.Date < DateTime.UtcNow.Date)
+            {
+                throw new InvalidOperationException($"Class start date cannot be in the past. Provided date: {request.StartDate.Value:yyyy-MM-dd}, Current date: {DateTime.UtcNow:yyyy-MM-dd}");
+            }
+
+            // Business Rule: Validate end date is after start date
+            if (request.StartDate.HasValue && request.EndDate.HasValue && request.EndDate.Value <= request.StartDate.Value)
+            {
+                throw new InvalidOperationException($"Class end date must be after the start date. Start date: {request.StartDate.Value:yyyy-MM-dd}, End date: {request.EndDate.Value:yyyy-MM-dd}");
+            }
+
             // Check if subject exists via API call
             var subjectExists = await _subjectApiClient.SubjectExistsAsync(request.SubjectId);
             if (!subjectExists)
@@ -41,6 +53,30 @@ namespace Infrastructure.Services
             var teacherExists = await _teacherApiClient.TeacherExistsAsync(request.TeacherId);
             if (!teacherExists)
                 throw new Exception("Teacher not found");
+
+            // Business Rule: Check if teacher already has a class with the same subject
+            var existingClassWithSameSubject = await _contentUow.Classes
+                .FirstOrDefaultAsync(c => c.TeacherId == request.TeacherId &&
+                                        c.SubjectId == request.SubjectId);
+
+            if (existingClassWithSameSubject != null)
+            {
+                throw new InvalidOperationException($"Teacher is already assigned to class '{existingClassWithSameSubject.Name}' (ID: {existingClassWithSameSubject.ClassId}) with the same subject (Subject ID: {request.SubjectId}). A teacher cannot have multiple classes for the same subject.");
+            }
+
+            // Business Rule: Check if teacher already has a class starting on the same day
+            if (request.StartDate.HasValue)
+            {
+                var teacherClassOnSameDay = await _contentUow.Classes
+                    .FirstOrDefaultAsync(c => c.TeacherId == request.TeacherId &&
+                                            c.StartDate.HasValue &&
+                                            c.StartDate.Value.Date == request.StartDate.Value.Date);
+
+                if (teacherClassOnSameDay != null)
+                {
+                    throw new InvalidOperationException($"Teacher is already assigned to class '{teacherClassOnSameDay.Name}' (ID: {teacherClassOnSameDay.ClassId}) that starts on {request.StartDate.Value:yyyy-MM-dd}. A teacher cannot have multiple classes starting on the same day.");
+                }
+            }
 
             var classEntity = new Class
             {
@@ -175,6 +211,19 @@ namespace Infrastructure.Services
             if (classEntity == null)
                 throw new Exception("Class not found");
 
+            // Business Rule: Validate start date is not in the past
+            if (request.StartDate.HasValue && request.StartDate.Value.Date < DateTime.UtcNow.Date)
+            {
+                throw new InvalidOperationException($"Class start date cannot be set to a past date. Provided date: {request.StartDate.Value:yyyy-MM-dd}, Current date: {DateTime.UtcNow:yyyy-MM-dd}");
+            }
+
+            // Business Rule: Validate end date is after start date
+            var newStartDate = request.StartDate ?? classEntity.StartDate;
+            if (request.EndDate.HasValue && newStartDate.HasValue && request.EndDate.Value <= newStartDate.Value)
+            {
+                throw new InvalidOperationException($"Class end date must be after the start date. Start date: {newStartDate.Value:yyyy-MM-dd}, End date: {request.EndDate.Value:yyyy-MM-dd}");
+            }
+
             if (!string.IsNullOrWhiteSpace(request.Name))
                 classEntity.Name = request.Name;
 
@@ -201,6 +250,21 @@ namespace Infrastructure.Services
                 var teacherExists = await _teacherApiClient.TeacherExistsAsync(request.TeacherId.Value);
                 if (!teacherExists)
                     throw new Exception("Teacher not found");
+
+                // Business Rule: Check if new teacher already has a class with the same subject
+                if (request.SubjectId.HasValue || classEntity.SubjectId > 0)
+                {
+                    var subjectIdToCheck = request.SubjectId ?? classEntity.SubjectId;
+                    var existingClassWithSameSubject = await _contentUow.Classes
+                        .FirstOrDefaultAsync(c => c.TeacherId == request.TeacherId.Value &&
+                                                c.SubjectId == subjectIdToCheck &&
+                                                c.ClassId != classId);
+
+                    if (existingClassWithSameSubject != null)
+                    {
+                        throw new InvalidOperationException($"The new teacher is already assigned to class '{existingClassWithSameSubject.Name}' (ID: {existingClassWithSameSubject.ClassId}) with the same subject (Subject ID: {subjectIdToCheck}). A teacher cannot have multiple classes for the same subject.");
+                    }
+                }
 
                 classEntity.TeacherId = request.TeacherId.Value;
             }
